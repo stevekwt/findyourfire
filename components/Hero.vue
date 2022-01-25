@@ -4,6 +4,7 @@
             <h1 class="header">Find your Fire Extinguisher</h1>
             <p class="snippet">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur exercitationem aut cumque possimus vero quod?</p>
             <button class="button btn">Start Looking</button>
+            <p>An extraordinarily luscious string with unique and piquant words which when summoned will blossom forth atop the veritable crown of listings.</p>
         </div>
         <img src="~assets/svg/fire-extinguisher.svg" alt="fire-extinguisher" class="image">
     </div>
