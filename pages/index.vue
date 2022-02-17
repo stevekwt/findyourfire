@@ -1,21 +1,30 @@
 <template>
-   <div class="container">
+    <div class="">
+      <Nav />
+      <div class="container">
         <Hero />
         <LargeCardDisplay
           v-for="cardInfo in largeCardInfo"
           :key="cardInfo.id"
           :cardsSection="cardInfo" 
         />
+        <SmallCardDisplay
+          v-for="cardInfo in smallCardInfo"
+          :key="cardInfo.id"
+          :cardsSection="cardInfo" 
+        />
+      </div>
     </div>
 </template>
 
 <script>
 // import LargeCardDisplay from "../components/LargeCardDisplay.vue";
-import { largeCardSections } from "@/assets/data.js"
+import { largeCardSections, smallCardSections } from "@/assets/data.js"
 export default {
   data() {
     return {
-      largeCardInfo: largeCardSections
+      largeCardInfo: largeCardSections,
+      smallCardInfo: smallCardSections
     }
   }
     // name: "IndexPage",
