@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding-nav">
     <NuxtLink class="navbar-brand" to="/">Firengii</NuxtLink>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
 </script>
 
 <style scoped>
-    .padding {
+    .padding-nav {
         padding: 1.5rem;
         background-color: black
     }
