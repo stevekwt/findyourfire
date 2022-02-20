@@ -1,13 +1,23 @@
 <template>
-    <div>
-        my it p
+    <div class="container">
+        <MyItem
+            v-for="item in myRentals"
+            :key="item.id"
+            :item="item"
+        />
     </div>
 </template>
 
 <script>
+    import { mapState } from "vuex"
+import MyItem from "../components/MyItem.vue"
     export default {
-        layout: 'no-nav'
-    }
+    layout: "no-nav",
+    computed: {
+        ...mapState(["myRentals"])
+    },
+    components: { MyItem }
+}
 </script>
 
 <style scoped>
